@@ -1,0 +1,12 @@
+zo-birthday-countdown/  
+├── index.html  
+├── manifest.json  
+├── sw.js  
+├── css/  
+│   └── styles.css  
+├── js/  
+│   ├── app.js  
+│   └── confetti.browser.min.js  ← vendor file (from canvas-confetti)  
+└── assets/  
+    ├── zo-photo.jpg              ← your 512×512+ PNG/JPEG of Zo  
+    └── kazoo.mp3                 ← placeholder CC0 kazoo clip  
