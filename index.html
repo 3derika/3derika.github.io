@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zo’s 12th Birthday Countdown</title>
+
+  <!-- PWA meta & manifest -->
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#EFDD66"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css"/>
+
+</head>
+<body>
+  <div id="app">
+    <img id="photo" src="assets/zo-photo.jpg" alt="Zo" />
+    <div id="countdown"></div>
+    <button id="openBtn">Open Countdown 🎉</button>
+  </div>
+
+  <!-- Audio -->
+  <audio id="kazoo" src="assets/kazoo.mp3"></audio>
+
+  <!-- Scripts -->
+  <script src="js/confetti.browser.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Register Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
